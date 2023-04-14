@@ -11,13 +11,15 @@ public class IFElseif {
         double x = scanner.nextInt();
         System.out.println("Введите число b");
         int b = scanner.nextInt();
-        if(x<3) {
-            System.out.println(Math.exp(1 * x) + 1 / Math.sin(x) + Math.sqrt(a * x));
-        }if (x==3) {
-            System.out.println(Math.sin(x)+Math.sqrt(x*a));
+        double result;
+        if (x < 3) {
 
-        }else if (x>3){
-            System.out.println(Math.cos(x)+Math.abs(b));
+            result = Math.exp(1 * x) + 1 / (a * x + 1);
+        } else if (x == 3) {
+            result = Math.sin(x) + Math.sqrt(x * a);
+        } else {
+            result = Math.cos(x) + Math.abs(b);
         }
+        System.out.println(String.format("s = %.2f", result));
     }
 }

@@ -8,10 +8,8 @@ import java.util.Scanner;
 
 public class Lecture {
     public static void main(String[] args) {
-
-
         lecture();
-        lecture2();
+  //      lecture2();
     }
 
     public static int lecture() {
@@ -33,7 +31,6 @@ public class Lecture {
             System.out.println("Нет решений");
 
         }
-        // System.out.println(y);
         return y;
     }
 
